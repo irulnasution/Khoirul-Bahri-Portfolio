@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Khoirul Bahri Portfolio</title>
+  <link rel="icon" href="img/favicon.jpeg" type="image/jpeg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      font-family: "Times New Roman", Georgia, Serif;
+    }
+
+    .nav-link {
+      color: black;
+      padding-top: 40px;
+      padding-right: 85px;
+    }
+
+    .nav-link:hover {
+      color: rgb(241, 226, 9);
+    }
+    .form-control {
+      width: 500px;
+      border-color: rgb(241, 226, 9);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="jumbotron text-center" style="margin-bottom:20px; background-image: url(img/header.jpg); height: 300px;">
+    <p style="color: black; font-size: 30  px;">My Portfolio</p>
+    <h1 style="color: black; font-size: 40;">Khoirul Bahri Nasution</h1>
+  </div>
+
+  <div style="font-size: 18px;">
+
+    <ul class="nav justify-content-center" style="margin-bottom: 70px;">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="work.html">Work</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="container" style="margin-top:30px; margin-bottom: 200px; ">
+    <div class="row">
+      <div class="col-sm-12" id="contact" style="min-height: 150px;">
+        <h2 style="text-align: center; margin-top: 10px;">Contact</h2><br><br><br>
+
+        <div class="col-md-5">
+          <h4><b>You can find me</b></h4><br>
+          <div class="sosmed" style="height: 140px; border-left: rgb(241, 226, 9) 2px solid; padding-left: 7px;">
+            <p><img src="img/phone.png" width="35px" alt="">0808-0808-0808</p>
+            <p><img src="img/fb.png" alt="">Khoirul Bahri</p>
+            <p><img src="img/tweet.png" alt="">@KhoirulBahri</p>
+          </div>
+        </div>
+
+        <div class="col-md-6" style="margin-left: 500px; margin-top: -200px;">
+          <form action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <textarea class="form-control" name="message" id="message" rows="5"
+                  placeholder="Enter Message"></textarea>
+              </div>
+            </div>
+            <div class="col-md-12 text-right">
+              <button type="submit" value="submit" class="btn btn-danger"><span>Send Message</span></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer style="background-color: black; height: 100px;">
+    <p style="text-align: center; color: white; padding-top: 30px;">Copyright @ 2020</p>
+  </footer>
+</body>
+
+</html>
